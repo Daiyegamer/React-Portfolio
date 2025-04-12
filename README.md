@@ -35,6 +35,7 @@ This project demonstrates how to build a modern React application that connects 
 ## Project Structure
 
 Below is an example structure of the project:
+
 your-project/ ├── public/ │ └── index.html # Main HTML file ├── src/ │ ├── components/ # Reusable UI components │ │ ├── Header.js │ │ ├── Footer.js │ │ ├── ProjectCard.js │ │ └── ContactForm.js │ ├── App.js # Main App component │ ├── index.js # React entry point │ └── styles/ # CSS or SASS files ├── .env # Environment variables (API URLs, etc.) ├── package.json # Project dependencies and scripts └── README.md # This readme file
 
 bash
@@ -121,9 +122,6 @@ This project is licensed under the MIT License.
 Contact
 For inquiries or further details, please contact:
 
+Email: your-email@example.com
 
-
-
-LinkedIn: [](https://www.linkedin.com/in/adil-s-6b0702125/)
-
-
+LinkedIn: Your LinkedIn Profile
