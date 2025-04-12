@@ -1,6 +1,6 @@
 # HTTP5222 Assignment 2: React Frontend
 
-This repository contains the source code for the React front-end developed as part of HTTP5222 Assignment 2. The project consumes data from the backend API created in Assignment 1. The API (built with Express) exposes endpoints for portfolio or small business data, and the React app retrieves this data to dynamically render the site content.
+This repository contains the source code for the React front-end developed as part of an assignment. The project consumes data from the backend API created in Assignment 1. The API (built with Express) exposes endpoints for portfolio or small business data, and the React app retrieves this data to dynamically render the site content.
 
 ## Table of Contents
 
