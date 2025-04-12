@@ -122,6 +122,6 @@ This project is licensed under the MIT License.
 Contact
 For inquiries or further details, please contact:
 
-Email: your-email@example.com
 
-LinkedIn: Your LinkedIn Profile
+
+LinkedIn: https://www.linkedin.com/in/adil-s-6b0702125/
