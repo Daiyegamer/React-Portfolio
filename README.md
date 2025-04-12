@@ -38,9 +38,7 @@ Below is an example structure of the project:
 
 your-project/ ├── public/ │ └── index.html # Main HTML file ├── src/ │ ├── components/ # Reusable UI components │ │ ├── Header.js │ │ ├── Footer.js │ │ ├── ProjectCard.js │ │ └── ContactForm.js │ ├── App.js # Main App component │ ├── index.js # React entry point │ └── styles/ # CSS or SASS files ├── .env # Environment variables (API URLs, etc.) ├── package.json # Project dependencies and scripts └── README.md # This readme file
 
-bash
-Copy
-Edit
+
 
 ## Installation and Setup
 
@@ -51,6 +49,8 @@ To run the project locally, follow these steps:
    ```bash
    git clone https://github.com/yourusername/your-project.git
    cd your-project
+
+
 Install Dependencies:
 
 bash
@@ -73,7 +73,7 @@ Edit
 npm start
 The application will run in development mode at http://localhost:3000.
 
-API Integration
+## API Integration
 The React front-end fetches data from the backend API built in Assignment 1. Some key endpoints used in the project include:
 
 /api/portfolio: Retrieves general portfolio information.
@@ -82,7 +82,7 @@ The React front-end fetches data from the backend API built in Assignment 1. Som
 
 Ensure that the backend API is deployed and accessible at the URL specified in the .env file.
 
-Deployment
+## Deployment
 To deploy the application:
 
 Push Changes: Make sure your latest changes are pushed to your GitHub repository.
@@ -104,7 +104,7 @@ CSS/SASS: Styling the front-end.
 
 Express & MongoDB: (From Assignment 1) Backend API service providing the data.
 
-Future Improvements
+## Future Improvements
 Improve error handling and loading states for API requests.
 
 Enhance the UI/UX with advanced styling and animations.
@@ -116,12 +116,11 @@ Expand API endpoints to support additional features.
 Contributing
 Contributions are welcome! If you have any ideas, bug fixes, or improvements, please open an issue or submit a pull request.
 
-License
+## License
 This project is licensed under the MIT License.
 
-Contact
+## Contact
 For inquiries or further details, please contact:
-
 
 
 LinkedIn: https://www.linkedin.com/in/adil-s-6b0702125/
