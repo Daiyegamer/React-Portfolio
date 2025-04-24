@@ -611,7 +611,6 @@ button.delete-btn:hover {
   }
 }
 
-/* === Enhanced Card Styles === */
 .card {
   background: linear-gradient(135deg, #e3f2fd, #bbdefb);
   border: 1px solid #ddd;
@@ -625,7 +624,7 @@ button.delete-btn:hover {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
-/* === Fade In Animation for Messages === */
+
 .success-message,
 .error-message {
   animation: fadeIn 0.3s ease-in;
@@ -642,7 +641,7 @@ button.delete-btn:hover {
   }
 }
 
-/* === Confirm Box Enhanced Styling === */
+
 .confirm-box {
   background: #fff0f0;
   border-left: 6px solid #e91e63;
@@ -653,14 +652,13 @@ button.delete-btn:hover {
   margin: 20px auto;
 }
 
-/* === Button Enhancement === */
+
 button {
   transition: all 0.25s ease;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-/* === Skills/Projects Divider and Layout === */
 .skills-projects-container {
   border-top: 4px solid #2196f3;
   border-bottom: 4px solid #2196f3;
@@ -668,7 +666,7 @@ button {
   padding-bottom: 30px;
 }
 
-/* === Responsive Layout for Cards === */
+
 @media (max-width: 768px) {
   .skills-projects-container {
     flex-direction: column;
@@ -682,7 +680,6 @@ button {
 }
 
 
-/* === View Project Link Styling === */
 a.view-project-link {
   display: inline-block;
   background-color: #007bff;
@@ -698,7 +695,6 @@ a.view-project-link:hover {
   background-color: #0056b3;
 }
 
-/* === Align List Items to the Left === */
 .skills-section ul,
 .projects-section ul {
   text-align: left;
@@ -716,14 +712,13 @@ a.view-project-link:hover {
   border-left: 4px solid #007bff;
 }
 
-/* === Optional icon marker for skills */
+
 .skills-section li::before {
   content: "✔️ ";
   margin-right: 8px;
 }
 
 
-/* === Fade-in Animation for Skill/Project Items === */
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
@@ -746,3 +741,310 @@ a.view-project-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
 }
+
+a.view-project-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+a.view-project-link:hover {
+  background-color: #0056b3;
+}
+
+a.view-project-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.5s;
+}
+
+a.view-project-link:hover::after {
+  left: 100%;
+}
+
+
+.skills-section ul,
+.projects-section ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.skills-section li,
+.projects-section li {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border-left: 4px solid #007bff;
+  animation: fadeSlideUp 0.4s ease-in both;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skills-section li:hover,
+.projects-section li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+
+.skills-section li::before {
+  content: "✔️ ";
+  margin-right: 8px;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+button.manage-btn,
+button.delete-btn,
+form button,
+nav button {
+  animation: softPulse 2s infinite ease-in-out;
+}
+
+@keyframes softPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0,123,255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0,123,255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0,123,255, 0);
+  }
+}
+
+
+body {
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* === Fancy Skill Badges === */
+.skills-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 0;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.skills-section li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #0d47a1;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,123,255,0.1);
+}
+
+.skills-section li:hover {
+  transform: scale(1.05);
+  background-color: #bbdefb;
+  cursor: default;
+}
+
+/* === Keep Admin Delete Button Clean === */
+.skills-section li button.delete-btn {
+  margin-left: 12px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-radius: 12px;
+}
+
+/* === Responsive Alignment === */
+@media (max-width: 768px) {
+  .skills-section ul {
+    justify-content: center;
+  }
+}
+
+
+/* === Fancy Project Cards === */
+.projects-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.projects-section li {
+  list-style: none;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: linear-gradient(to right, #e3f2fd, #f9f9f9);
+  border-left: 6px solid #2196f3;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-section li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.15);
+}
+
+.projects-section li a.view-project-link {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* === Project Delete Button Adjustments === */
+.projects-section li button.delete-btn {
+  margin-top: 8px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-radius: 12px;
+}
+
+
+/* === Fancy Skill Badges === */
+.skills-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 0;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.skills-section li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #0d47a1;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,123,255,0.1);
+}
+
+.skills-section li:hover {
+  transform: scale(1.05);
+  background-color: #bbdefb;
+  cursor: default;
+}
+
+/* === Keep Admin Delete Button Clean === */
+.skills-section li button.delete-btn {
+  margin-left: 12px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-radius: 12px;
+}
+
+/* === Responsive Alignment === */
+@media (max-width: 768px) {
+  .skills-section ul {
+    justify-content: center;
+  }
+}
+
+
+/* === Fancy Project Cards === */
+.projects-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.projects-section li {
+  list-style: none;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: linear-gradient(to right, #e3f2fd, #f9f9f9);
+  border-left: 6px solid #2196f3;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-section li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.15);
+}
+
+.projects-section li a.view-project-link {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* === Project Delete Button Adjustments === */
+.projects-section li button.delete-btn {
+  margin-top: 8px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-radius: 12px;
+}
+
+
+/* === Animation: Slide + Fade for Cards === */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-section li,
+.projects-section li {
+  animation: slideFadeIn 0.5s ease forwards;
+}
+
+/* === Skill Icon by Level (Example) === */
+.skills-section li::before {
+  content: "🎯 ";
+  margin-right: 6px;
+}
+
+/* === Add simple category tag example for projects === */
+.projects-section li::before {
+  content: "📁 ";
+  margin-right: 6px;
+  color: #2196f3;
+  font-size: 1.2rem;
+}
+
+/* === Responsive Improvements === */
+@media (max-width: 768px) {
+  .projects-section ul {
+    padding: 0;
+  }
+}
+

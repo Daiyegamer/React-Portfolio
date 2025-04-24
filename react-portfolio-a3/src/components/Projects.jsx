@@ -78,9 +78,10 @@ function Projects({ onProjectDeleted }) {
             {project.url && (
               <>
                 {" "}—{" "}
-                <a href={project.url} target="_blank" rel="noreferrer">
+                <a className="view-project-link" href={project.url} target="_blank" rel="noreferrer">
                   View Project
                 </a>
+
               </>
             )}
             {" "}
